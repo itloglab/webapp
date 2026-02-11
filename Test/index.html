@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Page Mockup Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="layout-fixed menu-hover scroll-normal">
+
+  <!-- Floating Settings Button -->
+  <button id="settingsBtn">⚙</button>
+
+  <!-- Settings Panel -->
+  <aside id="settingsPanel">
+    <h3>Layout</h3>
+    <select id="layoutSelect">
+      <option value="layout-fixed">한 화면 고정</option>
+      <option value="layout-scroll">헤더→메인→풋터 스크롤</option>
+    </select>
+
+    <h3>Menu Style</h3>
+    <select id="menuSelect">
+      <option value="menu-slide">좌측 슬라이드</option>
+      <option value="menu-click">상단 클릭형</option>
+      <option value="menu-hover">상단 호버 전체</option>
+    </select>
+
+    <h3>Scroll Type</h3>
+    <select id="scrollSelect">
+      <option value="scroll-normal">일반 스크롤</option>
+      <option value="scroll-page">페이지 단위 스크롤</option>
+    </select>
+
+    <h3>Theme Color</h3>
+    <div class="colors">
+      <button data-color="#1e88e5"></button>
+      <button data-color="#43a047"></button>
+      <button data-color="#f4511e"></button>
+      <button data-color="#6d4c41"></button>
+      <button data-color="#546e7a"></button>
+      <input type="color" id="customColor" />
+    </div>
+  </aside>
+
+  <!-- Slide Menu -->
+  <nav id="sideMenu">
+    <ul>
+      <li>Dashboard</li>
+      <li>Inventory</li>
+      <li>History</li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">LOGO</div>
+    <ul class="top-menu">
+      <li>입고
+        <ul class="sub-menu">
+          <li>입고 등록</li>
+          <li>입고 현황</li>
+        </ul>
+      </li>
+      <li>출고
+        <ul class="sub-menu">
+          <li>출고 요청</li>
+          <li>출고 이력</li>
+        </ul>
+      </li>
+      <li>재고</li>
+    </ul>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="page">Main Section 1</section>
+    <section class="page">Main Section 2</section>
+    <section class="page">Main Section 3</section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Web Mockup Playground
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
